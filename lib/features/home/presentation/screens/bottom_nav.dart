@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:mahmoudbakir_week2_uichallenge/features/home/presentation/screens/home_screen.dart';
-import 'package:mahmoudbakir_week2_uichallenge/features/upgrade/presentation/screens/purchase_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -38,9 +36,9 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
       title: ("Home"),
       activeColorPrimary: CupertinoColors.activeBlue,
       inactiveColorPrimary: CupertinoColors.systemGrey,
-      routeAndNavigatorSettings: RouteAndNavigatorSettings(
-        initialRoute: '/home', 
-        ),
+            routeAndNavigatorSettings: RouteAndNavigatorSettings(
+        initialRoute: '/home',
+      ),
     ),
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/group.png'),
@@ -65,9 +63,6 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
       title: ("Settings"),
       activeColorPrimary: CupertinoColors.activeBlue,
       inactiveColorPrimary: CupertinoColors.systemGrey,
-      routeAndNavigatorSettings: RouteAndNavigatorSettings(
-        initialRoute: '/purchase', 
-        ),
     ),
   ];
 }

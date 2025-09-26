@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mahmoudbakir_week2_uichallenge/core/routes/routes.dart';
 import 'package:mahmoudbakir_week2_uichallenge/features/details/presentation/screens/details_screen.dart';
-import 'package:mahmoudbakir_week2_uichallenge/features/home/presentation/screens/home_screen.dart';
+import 'package:mahmoudbakir_week2_uichallenge/features/home/presentation/screens/bottom_nav.dart';
 import 'package:mahmoudbakir_week2_uichallenge/features/upgrade/presentation/screens/purchase_screen.dart';
 
 
@@ -16,7 +16,7 @@ final appRouter = GoRouter(
   routes: [
         GoRoute(
           path: Routes.home,
-          builder: (context, state) => const HomeScreen(),
+          builder: (context, state) => const CustomBottomNavBar(),
           routes: _buildSectionsRoutes(),
         ),
       ],
