@@ -15,14 +15,6 @@ class CustomBottomNavBar extends StatelessWidget {
       controller: PersistentTabController(initialIndex: 0),
       screens: _buildScreens(),
       items: _navBarsItems(),
-      onItemSelected: (index) {
-        if (index == 0) context.go('/home');
-        if (index == 4) context.go('/purchase');
-      },
-      hideNavigationBarWhenKeyboardAppears: true,
-      backgroundColor: const Color.fromARGB(248, 210, 210, 184),
-      isVisible: true,
-      confineToSafeArea: true,
       navBarHeight: 98,
       navBarStyle: NavBarStyle.style7,
     );
@@ -35,7 +27,7 @@ List<Widget> _buildScreens() {
     Container(color: Colors.grey),
     Container(color: Colors.grey),
     Container(color: Colors.grey),
-    PurchaseScreen(),
+    Container(color: Colors.grey),
   ];
 }
 
