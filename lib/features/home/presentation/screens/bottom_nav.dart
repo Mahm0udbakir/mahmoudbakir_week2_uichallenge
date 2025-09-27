@@ -13,8 +13,9 @@ class CustomBottomNavBar extends StatelessWidget {
       controller: PersistentTabController(initialIndex: 0),
       screens: _buildScreens(),
       items: _navBarsItems(),
+      backgroundColor: Color(0xffF9F8FD),
       navBarHeight: 98,
-      navBarStyle: NavBarStyle.style7,
+      navBarStyle: NavBarStyle.style17,
     );
   }
 }
@@ -22,10 +23,10 @@ class CustomBottomNavBar extends StatelessWidget {
 List<Widget> _buildScreens() {
   return [
     HomeScreen(),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
+    Container(color: Colors.white),
+    Container(color: Colors.white),
+    Container(color: Colors.white),
+    Container(color: Colors.white),
   ];
 }
 
@@ -34,35 +35,39 @@ List<PersistentBottomNavBarItem> _navBarsItems() {
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/home.png'),
       title: ("Home"),
-      activeColorPrimary: CupertinoColors.activeBlue,
-      inactiveColorPrimary: CupertinoColors.systemGrey,
-            routeAndNavigatorSettings: RouteAndNavigatorSettings(
+      activeColorPrimary: Color(0xff5436F8),
+      inactiveColorPrimary: Color(0xffAEADB5),
+      routeAndNavigatorSettings: RouteAndNavigatorSettings(
         initialRoute: '/home',
       ),
     ),
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/group.png'),
       title: ("Categories"),
-      activeColorPrimary: CupertinoColors.activeBlue,
-      inactiveColorPrimary: CupertinoColors.systemGrey,
+      activeColorPrimary: Color(0xff5436F8),
+
+      inactiveColorPrimary: Color(0xffAEADB5),
     ),
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/search.png'),
       title: ("Search"),
-      activeColorPrimary: CupertinoColors.activeBlue,
-      inactiveColorPrimary: CupertinoColors.systemGrey,
+
+      activeColorPrimary: Color(0xff5436F8),
+      inactiveColorPrimary: Color(0xffAEADB5),
     ),
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/global.png'),
       title: ("Global"),
-      activeColorPrimary: CupertinoColors.activeBlue,
-      inactiveColorPrimary: CupertinoColors.systemGrey,
+
+      activeColorPrimary: Color(0xff5436F8),
+      inactiveColorPrimary: Color(0xffAEADB5),
     ),
     PersistentBottomNavBarItem(
       icon: Image.asset('assets/images/settings.png'),
       title: ("Settings"),
-      activeColorPrimary: CupertinoColors.activeBlue,
-      inactiveColorPrimary: CupertinoColors.systemGrey,
+
+      activeColorPrimary: Color(0xff5436F8),
+      inactiveColorPrimary: Color(0xffAEADB5),
     ),
   ];
 }
